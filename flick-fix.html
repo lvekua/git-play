@@ -1,92 +1,104 @@
-<div class="section group">
-	<div class="col-sizer"></div>
-	<div class="gutter-sizer"></div>
-	<div class="col col-span2">
-		<img src={{media url="wysiwyg/blanco/img/10-26/HOMEPAGE_SALE_GIF.gif"}}>
-		<a href={{store url="blog/introducing-hope-shoes-more/"}}>
-			<div class="txt-overlay">
-				<div class="txt-title">
-					<span>Introducing:</span>
-					<h3>HOPE for women + men</h3>
-				</div>
-			</div>
-		</a>
-	</div>
-	<div class="col">
-		<img src={{media url="wysiwyg/blanco/img/10-21/2.jpg"}}>
-		<a href={{store url="women/new-items.html"}}>
-			<div class="txt-overlay">
-				<div class="txt-title">
-					<span>Just In:</span>
-					<h3>HENRIK VIBSKOV</h3>
-				</div>
-			</div>
-		</a>
-	</div>
-	<div class="col">
-		<img src={{media url="wysiwyg/blanco/img/10-21/3.jpg"}}>
-		<a href={{store url="women/designers/oak.html"}}>
-			<div class="txt-overlay">
-				<div class="txt-title">
-					<span>Shop:</span>
-					<h3>OAK Collection Women</h3>
-				</div>
-			</div>
-		</a>
-	</div>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Masonry Grid Layout</title>
+		<link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+	</head>
+	<body>
 
-	<div class="col">
-		<img src={{media url="wysiwyg/blanco/img/10-21/4.jpg"}}>
-		<a href={{store url="men/designers/oak-collection.html"}}>
-			<div class="txt-overlay">
-				<div class="txt-title">
-					<span>Shop:</span>
-					<h3> OAK Collection Men</h3>
-				</div>
-			</div>
-		</a>
-	</div>
+		<div class="section group">
+		<div class="col-sizer"></div>
+		<div class="gutter-sizer"></div>
+		<div class="col col-span2">
+		    <img src="https://www.oaknyc.com/media/wysiwyg/blanco/img/10-21/1.jpg">
+		    <a href={{store url="blog/introducing-hope-shoes-more/"}}>
+		        <div class="txt-overlay">
+		            <div class="txt-title">
+		                <span>Introducing:</span>
+		                <h3>HOPE for women + men</h3>
+		            </div>
+		        </div>
+		    </a>
+		</div>
+		<div class="col">
+		    <img src="https://www.oaknyc.com/media/wysiwyg/blanco/img/10-21/2.jpg">
+		    <a href={{store url="women/new-items.html"}}>
+		        <div class="txt-overlay">
+		            <div class="txt-title">
+		                <span>Just In:</span>
+		                <h3>HENRIK VIBSKOV</h3>
+		            </div>
+		        </div>
+		    </a>
+		</div>
+		<div class="col">
+		    <img src="https://www.oaknyc.com/media/wysiwyg/blanco/img/10-21/3.jpg">
+		    <a href={{store url="women/designers/oak.html"}}>
+		        <div class="txt-overlay">
+		            <div class="txt-title">
+		                <span>Shop:</span>
+		                <h3>OAK Collection Women</h3>
+		            </div>
+		        </div>
+		    </a>
+		</div>
 
-	<div class="col col-span2">
-		<img src={{media url="wysiwyg/blanco/img/10-21/5.jpg"}}>
-		<a href={{store url="women/designers/laura-siegel.html"}}>
-			<div class="txt-overlay">
-				<div class="txt-title">
-					<span>Shop:</span>
-					<h3>Laura Siegel</h3>
-				</div>
-			</div>
-		</a>
-	</div>
+		<div class="col">
+		    <img src="https://www.oaknyc.com/media/wysiwyg/blanco/img/10-21/4.jpg">
+		    <a href={{store url="men/designers/oak-collection.html"}}>
+		        <div class="txt-overlay">
+		            <div class="txt-title">
+		                <span>Shop:</span>
+		                <h3> OAK Collection Men</h3>
+		            </div>
+		        </div>
+		    </a>
+		</div>
 
-	<div class="col">
-		<img src={{media url="wysiwyg/blanco/img/10-21/6.jpg"}}>
-		<a href={{store url="women/accessories.html"}}>
-			<div class="txt-overlay">
-				<div class="txt-title">
-					<span>Shop:</span>
-					<h3>Women's Accessories</h3>
-				</div>
-			</div>
-		</a>
-	</div>
-</div>
+		<div class="col col-span2">
+		    <img src="https://www.oaknyc.com/media/wysiwyg/blanco/img/10-21/5.jpg">
+		    <a href={{store url="women/designers/laura-siegel.html"}}>
+		        <div class="txt-overlay">
+		            <div class="txt-title">
+		                <span>Shop:</span>
+		                <h3>Laura Siegel</h3>
+		            </div>
+		        </div>
+		    </a>
+		</div>
 
+		<div class="col">
+		    <img src="https://www.oaknyc.com/media/wysiwyg/blanco/img/10-21/6.jpg">
+		    <a href={{store url="women/accessories.html"}}>
+		        <div class="txt-overlay">
+		            <div class="txt-title">
+		                <span>Shop:</span>
+		                <h3>Women's Accessories</h3>
+		            </div>
+		        </div>
+		    </a>
+		</div>
 
-<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
-<script type="text/javascript">
-	 //<![CDATA[
-    jQuery(document).ready(function(){
-    	jQuery('.section').imagesLoaded(function(){
-    		jQuery('.section').addClass('show-cols');
-					jQuery('.section').packery({
-					  // options
-					  columnWidth: '.col-sizer',
-					  itemSelector: '.col',
-					  gutter: '.gutter-sizer',
-					  percentPosition: true
-					});
-		});
-	 });
-	 //]]>
-</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="http://masonry.desandro.com/masonry.pkgd.js"></script>
+		<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+		<script type="text/javascript">
+			 //<![CDATA[
+		    jQuery(document).ready(function(){
+		    	jQuery('.section').imagesLoaded(function(){
+		    		jQuery('.section').addClass('show-cols');
+							jQuery('.section').masonry({
+							  // options
+							  columnWidth: '.col-sizer',
+							  itemSelector: '.col',
+							  gutter: '.gutter-sizer',
+							  percentPosition: true
+							});
+				});
+			 });
+			 //]]>
+		</script>
+
+	</body>
+</html>
