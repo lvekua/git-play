@@ -96,3 +96,4 @@ div.col:hover .txt-overlay {display: block;}
     transform: translate(-50%, -50%);
     text-align: center;
 }
+body{background: #000;}
